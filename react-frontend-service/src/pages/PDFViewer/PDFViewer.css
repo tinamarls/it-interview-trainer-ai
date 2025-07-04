@@ -1,0 +1,28 @@
+/* PDFViewer.css */
+.pdf-viewer-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pdf-document-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-controls {
+    margin-top: 15px;
+}
+
+.page-info {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* Стилизация канваса PDF */
+.react-pdf__Page__canvas {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

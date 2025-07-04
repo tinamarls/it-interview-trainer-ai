@@ -1,0 +1,191 @@
+.resume-page-wide {
+    padding-bottom: 60px;
+    max-width: 1800px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.resume-content {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 1.2rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+}
+
+.compare-button {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    width: 350px;
+}
+
+.upload-card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.upload-card-body {
+    padding: 2rem;
+}
+
+.upload-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.resume-upload-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.file-upload-group {
+    width: 100%;
+}
+
+.form-control-wide {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+.upload-button {
+    width: 250px;
+    margin-top: 16px;
+    font-weight: 500;
+    padding: 12px 0;
+    font-size: 1.1rem;
+}
+
+.resume-card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 0.5rem;
+}
+
+.resume-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.resume-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.resume-filename {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.resume-time {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+.download-btn {
+    font-weight: 500;
+    padding: 8px 20px;
+    font-size: 1.05rem;
+}
+
+.file-upload-label {
+    font-weight: 500;
+    color: #212529;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.selected-file-name {
+    font-size: 1rem;
+    color: #495057;
+    word-break: break-word;
+    margin-top: 12px;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 992px) {
+    .resume-page-wide {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+
+    .page-title {
+        font-size: 2.4rem;
+    }
+
+    .upload-card-body {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.2rem;
+    }
+
+    .compare-button {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .upload-button {
+        width: 100%;
+    }
+
+    .resume-card .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .download-btn {
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+.resume-filename {
+    cursor: pointer;
+    color: #4a76a8;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.resume-filename:hover {
+    color: #2a5885;
+}
+
+.resume-index {
+    font-weight: bold;
+    margin-right: 5px;
+}

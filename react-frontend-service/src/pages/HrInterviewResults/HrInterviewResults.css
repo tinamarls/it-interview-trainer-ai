@@ -1,0 +1,100 @@
+/* Импортируем стили из Vacancy.css для сохранения общего оформления */
+@import "/Users/kristina/IdeaProjects/it-train-diploma/react-frontend-service/src/pages/Vacancy/Vacancy.css";
+
+/* Дополнительные стили для страницы результатов интервью */
+
+.interview-result-detail {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+.result-summary {
+    margin-bottom: 2rem;
+}
+
+.result-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.result-summary th,
+.result-summary td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.result-summary th {
+    width: 30%;
+    background-color: #f9f9f9;
+}
+
+.questions-answers {
+    margin-bottom: 2rem;
+}
+
+.question-answer-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.question-answer-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.answer-details {
+    padding: 0.5rem;
+}
+
+.feedback, .score {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.score {
+    font-weight: bold;
+}
+
+.recommendations {
+    background-color: #f0f7ff;
+    border: 1px solid #b3d8ff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.back-button {
+    margin-bottom: 1rem;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Обеспечение отзывчивости для мобильных устройств */
+@media (max-width: 768px) {
+    .result-summary th {
+        width: 40%;
+    }
+
+    .question-answer-card {
+        padding: 1rem;
+    }
+}

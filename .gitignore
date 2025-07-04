@@ -1,0 +1,67 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Maven
+.mvn/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Spring Boot
+*.log
+*.pid
+*.gz
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.env
+venv/
+
+# Node.js / React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/build
+/.next
+/.nuxt
+coverage/
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.swp
+*.swo
+*.bak
+*.tmp
+*.~*
+
+open_face

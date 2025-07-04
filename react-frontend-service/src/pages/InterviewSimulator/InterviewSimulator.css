@@ -1,0 +1,254 @@
+/* Общие стили */
+.start-page {
+    width: 75%; /* Делаем все страницы шире и одинаковые */
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 80px;
+    max-width: none;
+}
+
+.interview-container {
+    width: 95%; /* Явно указываем ширину еще раз */
+    /* Или попробуйте 98% если 95% все равно кажется узким */
+    /* width: 98%; */
+    margin: 0 auto; /* Сохраняем центрирование */
+    padding: 30px; /* Сохраняем отступы */
+    font-family: 'Roboto', sans-serif; /* Сохраняем шрифт */
+    margin-top: 80px; /* Сохраняем верхний отступ */
+    max-width: none; /* Сохраняем отсутствие максимальной ширины */
+
+    /* Существующие стили для фона, рамок и теней */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.results-page {
+    width: 95%; /* Делаем все страницы шире и одинаковые */
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 80px;
+    max-width: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Стили начальной страницы */
+.start-page {
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.start-page p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.rules {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin: 30px 0;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.rules h2 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.rules ul {
+    padding-left: 20px;
+}
+
+.rules li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.start-button {
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    padding: 15px 40px;
+    margin-top: 20px;
+}
+
+.start-button:hover {
+    background-color: #2980b9;
+}
+
+/* Принудительное горизонтальное отображение прогресса */
+.progress-bar {
+    display: flex;
+    flex-direction: row !important; /* Принудительно горизонтальный */
+    justify-content: center;
+    margin: 20px auto;
+    width: 80%;
+    overflow-x: visible; /* Предотвращаем сокрытие элементов */
+}
+
+.progress-item {
+    width: 40px;
+    height: 40px;
+    min-width: 40px; /* Фиксированная минимальная ширина */
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.progress-item.current {
+    background-color: #3498db;
+    color: white;
+}
+
+.progress-item.answered {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.interview-layout {
+    display: flex;
+    flex-direction: row; /* Явно указываем горизонтальное направление */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Увеличиваем видео-секцию */
+.video-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-section {
+    flex: 1;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 65%;
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-preview {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.timer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.record-button {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 18px;
+    padding: 14px 30px;
+}
+
+.record-button:hover {
+    background-color: #c0392b;
+}
+
+.answer-button {
+    background-color: #2ecc71;
+    color: white;
+    font-size: 18px;
+    padding: 14px 30px;
+}
+
+.answer-button:hover {
+    background-color: #27ae60;
+}
+
+.question-card {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.question-card h3 {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.history-button {
+    padding: 10px 16px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.history-button:hover {
+    background-color: #5a6268;
+}

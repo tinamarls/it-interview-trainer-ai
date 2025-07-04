@@ -1,0 +1,14 @@
+/* Пример стилей для навбара */
+.custom-navbar {
+    display: flex;
+    justify-content: space-between; /* Распределение элементов по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+    width: 100%; /* Растянуть на всю ширину */
+    position: fixed; /* Закрепить сверху */
+    top: 0;
+    left: 0;
+    background-color: #fff; /* Цвет фона */
+    z-index: 1000; /* Поверх других элементов */
+    padding: 10px 20px; /* Внутренние отступы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для отделения */
+}
